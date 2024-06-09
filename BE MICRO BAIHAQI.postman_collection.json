@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "6db9e5b0-1c53-40c0-8aa3-7546449c9309",
+		"name": "BE MICRO BAIHAQI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11218257"
+	},
+	"item": [
+		{
+			"name": "generateJWT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/service/getToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service",
+						"getToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userInfoByAccountNumber",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxNzg5OTIxNX0.dKW7OWQPiLVK7RveCfMFD3m1K33TI-LHXtHJarAmHAo"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/userInfoByAccountNumber/ACCNUM_2024060800006",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"userInfoByAccountNumber",
+						"ACCNUM_2024060800006"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userInfoByRegistrationNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ0Njg2Nn0.eg1pKAXKE0ZA_D8ZMYXqrGgyUBRttDlWeAck1rEtqho"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\":\"Ottoyd222\",\n  \"accountNumber\":\"Ottoyd\",\n  \"emailAddress\":\"Ottoyd@mail.com\",\n  \"identityNumber\":\"Ottoyd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/userInfoByRegistrationNumber/REGNUM_2024060800005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"userInfoByRegistrationNumber",
+						"REGNUM_2024060800005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ0NzEwM30.cbDl5tASKf_blzHPQgZOaovntvLB-oA3j2ysXdohKyw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fullName\":\"abi115\",\n  \"userName\":\"abi772asdsad223dsd222225\",\n  \"emailAddress\":\"abi322232323sdsd22@gmail.com\",\n  \"password\":\"5444525\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accountLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ0NzEwM30.cbDl5tASKf_blzHPQgZOaovntvLB-oA3j2ysXdohKyw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\":\"abi77222225\",\n  \"password\":\"5444525\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accountLastLogin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ0NzEwM30.cbDl5tASKf_blzHPQgZOaovntvLB-oA3j2ysXdohKyw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fullName\":\"abi\",\n  \"userName\":\"abi77\",\n  \"emailAddress\":\"abi@gmail.com\",\n  \"password\":\"abi123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/account/lastLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"lastLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ2MjcwOH0.edkGGr_LhwONqM2U6e0Fp45rhsv_exkLSa61RCx6eY0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fullName\":\"Ottoyd222\",\n  \"emailAddress\":\"Ottoyd11111@mail.com\",\n  \"oldPassword\":\"Ottoyd1111222\",\n  \"newPassword\":\"Ottoyd12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/edit/USRID_2024060900008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"edit",
+						"USRID_2024060900008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoiYmFpaGFxaSIsImlhdCI6MTcxMjQ0NTY0M30.nPhYtOFfg0T-376ppy1DF1XlUjBF_pMdzrSW1yq9mh0"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/delete/66121b46910806f81fa84695",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"delete",
+						"66121b46910806f81fa84695"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
