@@ -2,9 +2,12 @@
 npm install
 
 ## Local ENV
-PORT=3000\n
+PORT=3000
+
 JWT_SECRET=BAIHAQI
+
 MONGO_HOST=ottoyd xxxxxx true&w=majority
+
 REDIS_URL=rediss:// xxxxxxx 0545.upstash.io:30545
 
 ## Runing in your local
