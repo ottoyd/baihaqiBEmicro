@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send(`
         <h1>Welcome,</h1>
         <p>Click the button below to view the Postman documentation:</p>
-        <a href="https://github.com/ottoyd/baihaqi-betest/blob/main/BE_MICRO_BAIHAQI.postman_collection.json" class="btn btn-primary">Download Postman Collection</a>
+        <a href="https://github.com/ottoyd/baihaqiBEmicro/blob/main/BE%20MICRO%20BAIHAQI.postman_collection.json" class="btn btn-primary">Download Postman Collection</a>
         <h2>List Of API</h2>
         
         <p>GET /service/getToken</p>
