@@ -13,20 +13,22 @@ npm run dev
 ## Unit test
 npm run test
 
-## Unit test
-/service/getToken
+## List Of API
+GET /service/getToken
 
-/user/allUser
+GET /user/userInfoByAccountNumber/:num
 
-/user/userByAccountNum/:num
+GET /user/userInfoByRegistrationNumber/:num
 
-/user/userByIdentityNum/:num
+POST /user/create
 
-/user/create
+PUT /user/edit/:userId
 
-/user/edit/:id
+DEL /user/delete/:userId
 
-/user/delete/:id
+POST /account/login
+
+GET /account/lastLogin
 
 remember you need to get token from "/service/getToken"
 
